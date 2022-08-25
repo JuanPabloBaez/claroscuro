@@ -60,7 +60,7 @@ nav {
   background: none;
   position: absolute;
   z-index: 2;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 nav .logo {
@@ -91,7 +91,13 @@ nav img {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
-  margin: 1%;
+  margin-top: 2%;
+}
+
+.nav-panel button {
+  background: none;
+  color: currentColor;
+  border: none;
 }
 
 footer {
@@ -109,5 +115,11 @@ footer {
           justify-content: center;
   bottom: 0;
   z-index: 1;
+  font-weight: 300;
+}
+
+footer a {
+  font-weight: 800;
+  margin: 0 3px;
 }
 /*# sourceMappingURL=app.css.map */

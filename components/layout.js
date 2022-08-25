@@ -28,8 +28,10 @@ function Layout({children}) {
     <Head>
     <title>Claroscuro Producciones</title>
     </Head>
-    <div className='body' style={light===true ? {color:'white'}  :null}>
-        <nav>
+
+
+    <div className='body' >
+        <nav style={light===true ? {color:'white'}  :null}>
             <Link href='/'>
             <a className="logo"><Image  src={light===true ? LogoWhite : LogoBlack}  alt="Home Logo" /></a> 
             </Link>
@@ -43,16 +45,14 @@ function Layout({children}) {
               <Link href='/contacto'>
               <a>{lang==="esp" ? "CONTACTO" :"CONTACT"}</a>
               </Link>
-              <button onClick={()=> lang==="esp" ? setLang("eng"): setLang("esp")}>en</button>
+              <button onClick={()=> lang==="esp" ? setLang("eng"): setLang("esp")}>{lang==="esp"? "eng":"esp"}</button>
             </div>
         </nav>
 
         <main>{children}</main>
 
         <footer style={light===true ? {color:'white'}  :null}>
-            <p>&copy; Claroscuro Producciones SL</p> |
-            <p>Diseño: Aina Requena</p>
-            <p>Web: Juan Pablo Baez</p>
+            <p>&copy; Claroscuro Producciones SL | {lang=="esp" ?"Diseño:":"Design:"} <a href="https://www.ainarequena.com/" target="_blank" rel="noopener noreferrer">Aina Requena</a> Web: <a href="http://jpbaez.com/" target="_blank" rel="noopener noreferrer">Juan Pablo Baez</a> </p> 
         </footer>
     </div>
     </>
