@@ -14,6 +14,7 @@ video {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 .body {
@@ -25,7 +26,6 @@ video {
 }
 
 main {
-  font-family: 'Raleway', sans-serif;
   min-height: 100vh;
   width: 100%;
   display: -webkit-box;

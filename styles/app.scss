@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 .body{
     width: 100%;
@@ -13,7 +14,7 @@
     height: fit-content;
 }
 main{
-    font-family: 'Raleway', sans-serif;
+    
     min-height: 100vh;
     width: 100%;
     display: flex;

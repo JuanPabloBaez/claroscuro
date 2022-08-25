@@ -13,9 +13,15 @@ export const themeState = atom({
   default: true
 })
 
+export const langState = atom({
+  key: 'language',
+  default:'esp'
+})
+
 
 function Layout({children}) {
   const [light,] = useRecoilState(themeState);
+  const [lang,setLang] = useRecoilState(langState)
 
    return (
     <>
@@ -29,15 +35,15 @@ function Layout({children}) {
             </Link>
             <div className="nav-panel">
               <Link href='/trabajos'>
-                <p>TRABAJOS</p>
+                <a>{lang==="esp" ? "TRABAJOS":"WORK"}</a> 
               </Link>
               <Link href='/nosotros'>
-                <p>NOSOTROS</p>
+                <a>{lang==="esp" ? "NOSOTROS" :"ABOUT"}</a>
               </Link>
               <Link href='/contacto'>
-                <p>CONTACTO</p>
+              <a>{lang==="esp" ? "CONTACTO" :"CONTACT"}</a>
               </Link>
-              <button>en</button>
+              <button onClick={()=> lang==="esp" ? setLang("eng"): setLang("esp")}>en</button>
             </div>
         </nav>
 

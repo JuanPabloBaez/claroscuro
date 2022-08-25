@@ -1,12 +1,15 @@
 import React,{useEffect, useState} from 'react';
-import {useRecoilState} from 'recoil';
-import {themeState} from '../components/layout.js';
+import {useRecoilState,useRecoilValue} from 'recoil';
+import {themeState,langState} from '../components/layout.js';
 
 
 
 export default function Home() {
   const [,setLight] = useRecoilState(themeState);
   const [isPlaying, setIsPlaying] = useState(false);
+  const language = useRecoilValue(langState);
+
+  
 
 
 
