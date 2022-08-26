@@ -17,7 +17,7 @@ export default function Home() {
 
     useEffect(()=>{
         setLight(true)
-    }, []);
+    }, [setLight]);
 
     
 

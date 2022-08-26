@@ -6,7 +6,7 @@ function Trabajos() {
     const [,setLight] = useRecoilState(themeState)
     useEffect(()=>{
         setLight(false)
-    }, [])    
+    }, [setLight])    
 
   return (
     <div>Trabajos</div>
