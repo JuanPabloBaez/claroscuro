@@ -52,7 +52,7 @@ function Layout({children}) {
         <main>{children}</main>
 
         <footer style={light===true ? {color:'white'}  :null}>
-            <p>&copy; Claroscuro Producciones SL | {lang=="esp" ?"Diseño:":"Design:"} <a href="https://www.ainarequena.com/" target="_blank" rel="noopener noreferrer">Aina Requena</a> Web: <a href="http://jpbaez.com/" target="_blank" rel="noopener noreferrer">Juan Pablo Baez</a> </p> 
+            <span><p>&copy; Claroscuro Producciones SL | </p><p> {lang=="esp" ?"Diseño:":"Design:"} <a href="https://www.ainarequena.com/" target="_blank" rel="noopener noreferrer">Aina Requena</a></p><p> Web: <a href="http://jpbaez.com/" target="_blank" rel="noopener noreferrer">Juan Pablo Baez</a> </p> </span>
         </footer>
     </div>
     </>

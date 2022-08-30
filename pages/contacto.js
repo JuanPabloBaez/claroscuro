@@ -12,12 +12,13 @@ function Contacto() {
 
   return (
     <>
-    { lang==="esp" ? <div id="about-text">
+    { lang==="esp" ? <div id="contact-text">
       <h3>CONTACTO</h3>
       <p>Puedes contactarnos y echar un vistazo a nuestros proyectos actuales en nuestras páginas web personales: </p>
-      <p><a href="https://www.jpbaez.com/" target="_blank" rel="noreferrer">jpbaez.com</a> <br/> <a href="https://www.ainarequena.com/" target="_blank" rel="noreferrer">ainarequena.com</a></p>
+      <a href="https://www.ainarequena.com/" target="_blank" rel="noreferrer">ainarequena.com</a> <br/> 
+      <a href="https://www.jpbaez.com/" target="_blank" rel="noreferrer">jpbaez.com</a> 
 
-    </div> : <div id="about-text">
+    </div> : <div id="contact-text">
       <h3>CONTACT</h3>
       <p>You can contact us and take a look at our current projects on our personal web pages: </p>
       <p><a href="https://www.jpbaez.com/" target="_blank" rel="noreferrer">jpbaez.com</a> <br/> <a href="https://www.ainarequena.com/" target="_blank" rel="noreferrer">ainarequena.com</a></p>

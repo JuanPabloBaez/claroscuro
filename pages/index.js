@@ -33,7 +33,7 @@ export default function Home() {
       <button className='close-player' onClick={()=>setIsPlaying(false)} >X</button>
       <ReactPlayer 
         className="reel"
-        url="https://vimeo.com/585754763"
+        url="https://vimeo.com/68687499"
         controls={true}
         responsive="true"
         
