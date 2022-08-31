@@ -1,22 +1,15 @@
 import Link from "next/link";
 import Image from 'next/image';
 import Head from 'next/head';
+import {themeState,langState} from '../pages/index.js';
+import {useRecoilState} from 'recoil';
 
 
-import {atom,useRecoilState} from 'recoil';
 
 import LogoWhite from '../public/logo-blanc.png';
 import LogoBlack from '../public/logo-negre.png';
 
-export const themeState = atom({
-  key: 'lightTheme',
-  default: true
-})
 
-export const langState = atom({
-  key: 'language',
-  default:'esp'
-})
 
 
 function Layout({children}) {

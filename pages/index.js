@@ -1,11 +1,20 @@
 import React,{useEffect, useState} from 'react';
 import Image from 'next/image';
-import {useRecoilState,useRecoilValue} from 'recoil';
-import {themeState,langState} from '../components/layout.js';
+import {atom, useRecoilState,useRecoilValue} from 'recoil';
+
 import ReactPlayer from 'react-player';
 
 import Play from '../public/play-blanc.png'
 
+export const themeState = atom({
+  key: 'lightTheme',
+  default: true
+})
+
+export const langState = atom({
+  key: 'language',
+  default:'esp'
+})
 
 
 

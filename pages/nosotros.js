@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import {useRecoilState, useRecoilValue} from 'recoil';
-import {themeState,langState} from '../components/layout.js';
+import {themeState,langState} from './index.js';
 
 
 function Nosotros() {
