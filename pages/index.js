@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import {atom, useRecoilState,useRecoilValue} from 'recoil';
 import ReactPlayer from 'react-player';
 import Play from '../public/play-blanc.png';
@@ -25,12 +25,12 @@ export default function Home() {
     
   return (
     <>
-    {isPlaying===false ? <button className='play' onClick={()=>setIsPlaying(true)} ><span>
+    {isPlaying===false ? <button className='play' onClick={()=>setIsPlaying(true)} ><>
       <Image src={Play} alt="Press button to watch video reel" width={100} height={100}/>
       <p>{lang==="esp"? "VER REEL" : "WATCH REEL"}</p>
-      </span></button>
+      </></button>
     :<div className='player'>
-      <span>
+      <>
       <button className='close-player' onClick={()=>setIsPlaying(false)} >X</button>
       <ReactPlayer 
         className="reel"
@@ -38,7 +38,7 @@ export default function Home() {
         controls={true}
         responsive="true"
         />
-        </span> 
+        </> 
       </div>
     }
    

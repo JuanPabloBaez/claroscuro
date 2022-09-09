@@ -11,9 +11,15 @@ video{
     background: none;
     border: none;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    width: inherit;
+    max-width: 640px;
     p{
         font-size: 1.2rem;
-        margin-top: 3%;
+        margin-top: 5%;
     }
 }
 .player{
@@ -27,13 +33,7 @@ video{
     flex-direction: column;
     background-color: rgba(21, 21, 21, .97);
     z-index: 2;
-    span{
-        display: flex;
-        flex-direction: column;
-        background: none;
-        width: inherit;
-        max-width: 640px !important;
-    }
+   
     .reel{
         width: 95% !important;
        
