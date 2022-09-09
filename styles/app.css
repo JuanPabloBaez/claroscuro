@@ -161,13 +161,13 @@ video {
   font-size: 1.1rem;
 }
 
-.item-container h2, .item-container h3 {
+.item-container h2 {
   font-size: 1.3rem;
-  margin: 0 10px;
   font-weight: 500;
+  margin: 0 10px;
 }
 
-.item-container h4 {
+.item-container h3, .item-container h4 {
   font-size: 1.15rem;
   font-weight: 400;
 }
@@ -186,28 +186,27 @@ video {
 
 .item-container p {
   opacity: 0;
-  margin: 0 10px;
+  margin: 4px 10px;
   display: none;
-  margin-top: 4px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .item-container .work_foto {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -2 !important;
+  z-index: -2;
 }
 
 .item-container #fotoBW {
-  z-index: -1 !important;
+  z-index: -1;
   opacity: 0;
   -webkit-transition: opacity .7s;
   transition: opacity .7s;
 }
 
 .item-container .work_link {
-  width: 80px;
+  width: 70px;
   height: auto;
   margin: 0 auto;
   display: none;

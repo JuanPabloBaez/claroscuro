@@ -27,12 +27,12 @@
     z-index: 1;
     font-size: 1.1rem;
    
-    h2, h3{
+    h2{
         font-size: 1.3rem;
-        margin: 0 10px;
         font-weight: 500;
+        margin: 0 10px;
     }
-    h4{
+    h3, h4{
         font-size: 1.15rem;
         font-weight: 400;
     }
@@ -45,23 +45,23 @@
     }
     p {
         opacity: 0;
-        margin: 0 10px;
+        margin: 4px 10px;
         display: none;
-        margin-top: 4px;
-        font-weight: 200;
+        
+        font-weight: 300;
     }
     .work_foto{
         position: absolute;
         object-fit: cover;
-        z-index: -2 !important; 
+        z-index: -2; 
     }
     #fotoBW{
-        z-index: -1 !important;
+        z-index: -1;
         opacity: 0;
         transition: opacity .7s;
     }
     .work_link{
-        width: 80px;
+        width: 70px;
         height: auto;
         margin: 0 auto;
         display: none;
