@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from 'next/image';
-import Head from 'next/head';
 import {themeState,langState} from '../pages/index.js';
 import {useRecoilState} from 'recoil';
 
@@ -18,9 +17,7 @@ function Layout({children}) {
 
    return (
     <>
-    <Head>
-    <title>Claroscuro Producciones</title>
-    </Head>
+  
 
 
     <div className='body' >

@@ -1,36 +1,28 @@
 import React,{useEffect, useState} from 'react';
 import Image from 'next/image';
 import {atom, useRecoilState,useRecoilValue} from 'recoil';
-
 import ReactPlayer from 'react-player';
-
-import Play from '../public/play-blanc.png'
+import Play from '../public/play-blanc.png';
 
 export const themeState = atom({
   key: 'lightTheme',
   default: true
 })
-
 export const langState = atom({
   key: 'language',
   default:'esp'
 })
-
-
 
 export default function Home() {
   const [,setLight] = useRecoilState(themeState);
   const [isPlaying, setIsPlaying] = useState(false);
   const lang = useRecoilValue(langState);
 
-
     useEffect(()=>{
         setLight(true)
     }, [setLight]);
 
     
-
-
   return (
     <>
     {isPlaying===false ? <button className='play' onClick={()=>setIsPlaying(true)} ><span>
@@ -45,15 +37,16 @@ export default function Home() {
         url="https://vimeo.com/68687499"
         controls={true}
         responsive="true"
-        
         />
         </span> 
-    </div>}
+      </div>
+    }
+   
 
 
     <video autoPlay playsInline loop muted> <source src='/reel.mp4'/></video>
     </>
-      
+       
    
   )
 }
