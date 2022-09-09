@@ -1,0 +1,97 @@
+.works_sub{
+    width: fit-content;
+    display: block;
+    margin: 2% 8% 4% auto;
+}
+
+.works{
+    width: 95%;
+    max-width: 1200px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.item-container{
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    z-index: 1;
+    font-size: 1.1rem;
+   
+    h2{
+        font-size: 1.3rem;
+        margin: 0 10px;
+        font-weight: 500;
+    }
+    h3,h4{
+        font-size: 1.15rem;
+        font-weight: 400;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        margin: 3px 10px;
+        gap: 10px;
+    }
+    p {
+        opacity: 0;
+        margin: 0 10px;
+        display: none;
+        margin-top: 4px;
+        font-weight: 200;
+    }
+    .work_foto{
+        position: absolute;
+        object-fit: cover;
+        z-index: -2 !important; 
+    }
+    #fotoBW{
+        z-index: -1 !important;
+        opacity: 0;
+        transition: opacity .7s;
+    }
+    .work_link{
+        width: 80px;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+        img{
+            object-fit: contain;
+            width: inherit;
+        }
+    }
+    &:hover{
+        text-shadow: 2px 2px 4px black;
+        #fotoBW{
+            z-index: -1 !important;
+            opacity: 1;
+        }
+        span, p, .work_link {
+            animation-duration: .8s;
+            animation-name: fadein;
+            animation-fill-mode: forwards;
+        }
+        p, .work_link {
+            display: inline; 
+        }
+    }
+}
+
+
+@keyframes fadein { 
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

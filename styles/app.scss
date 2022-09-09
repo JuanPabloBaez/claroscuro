@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import './home';
+@import './trabajos';
 
 
 *{
@@ -73,6 +74,7 @@ main{
     padding-top: 15vh;
     padding-bottom: 3vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;     
 }

@@ -115,6 +115,148 @@ video {
   line-height: 1.8rem;
 }
 
+.works_sub {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 2% 8% 4% auto;
+}
+
+.works {
+  width: 95%;
+  max-width: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+}
+
+.item-container {
+  width: 350px;
+  height: 350px;
+  max-width: 100%;
+  color: ghostwhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+
+.item-container h2 {
+  font-size: 1.3rem;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.item-container h3, .item-container h4 {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.item-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  margin: 3px 10px;
+  gap: 10px;
+}
+
+.item-container p {
+  opacity: 0;
+  margin: 0 10px;
+  display: none;
+  margin-top: 4px;
+  font-weight: 200;
+}
+
+.item-container .work_foto {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2 !important;
+}
+
+.item-container #fotoBW {
+  z-index: -1 !important;
+  opacity: 0;
+  -webkit-transition: opacity .7s;
+  transition: opacity .7s;
+}
+
+.item-container .work_link {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+  display: none;
+}
+
+.item-container .work_link img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: inherit;
+}
+
+.item-container:hover {
+  text-shadow: 2px 2px 4px black;
+}
+
+.item-container:hover #fotoBW {
+  z-index: -1 !important;
+  opacity: 1;
+}
+
+.item-container:hover span, .item-container:hover p, .item-container:hover .work_link {
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.item-container:hover p, .item-container:hover .work_link {
+  display: inline;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -211,6 +353,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
