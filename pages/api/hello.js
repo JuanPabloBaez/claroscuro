@@ -18,6 +18,7 @@ export default function handler(req, res) {
       cat_eng:"Shortfilm",
       info_esp:"Escrito por Martín Román. Dirigido por Iñaki Antuñano y Martín Román. Co producido con KILL THE TV." ,
       info_eng:"Writed by Martín Román. Directed by Iñaki Antuñano and Martín Román. Co produced with KILL THE TV.",
+      prod_year:2012 ,
       photo:"/photos/1903.jpg",
       photoBW:"/photos/1903-2.jpg",
       link:"https://beatkino.com/#/film/19-03"
