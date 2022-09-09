@@ -25,9 +25,8 @@ function Trabajos() {
     <h4 className='works_sub'>{lang==="esp" ? "Selección de trabajos" : "Selected works"}</h4>
     <div className='works'>
     {data.map((item, index)=>{
-       console.log(item)
-      return( <div className='item-container' key={index}>
-       
+      return( 
+      <div className='item-container' key={index}>
        <Image
           src={item.photoBW}
           alt={`frame of ${item.title_eng}`}
@@ -35,7 +34,6 @@ function Trabajos() {
           height={350}
           className="work_foto"
           id="fotoBW"
-          
         />
         <Image
           src={item.photo}
@@ -43,11 +41,9 @@ function Trabajos() {
           width={350}
           height={350}
           className="work_foto"
-          
         />
         <h2>{lang==="esp" ? item.title_esp : item.title_eng}</h2>
         <span><h3>{lang==="esp" ? item.cat_esp : item.cat_eng}</h3><h4>{item.prod_year}</h4></span>
-        
         <p>{lang==="esp" ? item.info_esp : item.info_eng}</p>
        { item.link && <a className="work_link" href={item.link} target="_blank" rel="noopener noreferrer"><Image
           src="/play.svg"
