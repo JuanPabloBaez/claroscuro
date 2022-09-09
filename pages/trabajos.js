@@ -48,8 +48,8 @@ function Trabajos() {
        { item.link && <a className="work_link" href={item.link} target="_blank" rel="noopener noreferrer"><Image
           src="/play.svg"
           alt={`watch ${item.title_eng}`}
-          width={120}
-          height={120}
+          width={100}
+          height={100}
         /></a> }
          
       </div>)

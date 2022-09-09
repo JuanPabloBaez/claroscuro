@@ -120,6 +120,8 @@ video {
   width: -moz-fit-content;
   width: fit-content;
   display: block;
+  font-style: italic;
+  font-weight: 400;
   margin: 2% 8% 4% auto;
 }
 
@@ -159,13 +161,13 @@ video {
   font-size: 1.1rem;
 }
 
-.item-container h2 {
+.item-container h2, .item-container h3 {
   font-size: 1.3rem;
   margin: 0 10px;
   font-weight: 500;
 }
 
-.item-container h3, .item-container h4 {
+.item-container h4 {
   font-size: 1.15rem;
   font-weight: 400;
 }

@@ -1,6 +1,8 @@
 .works_sub{
     width: fit-content;
     display: block;
+    font-style: italic;
+    font-weight: 400;
     margin: 2% 8% 4% auto;
 }
 
@@ -25,12 +27,12 @@
     z-index: 1;
     font-size: 1.1rem;
    
-    h2{
+    h2, h3{
         font-size: 1.3rem;
         margin: 0 10px;
         font-weight: 500;
     }
-    h3,h4{
+    h4{
         font-size: 1.15rem;
         font-weight: 400;
     }

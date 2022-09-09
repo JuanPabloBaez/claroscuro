@@ -23,7 +23,7 @@ function Layout({children}) {
     <div className='body' >
         <nav style={light===true ? {color:'white'}  :null}>
             <Link href='/'>
-            <a className="logo"><Image  src={light===true ? LogoWhite : LogoBlack}  alt="Home Logo" /></a> 
+            <a className="logo"><Image  src={light===true ? LogoWhite : LogoBlack}  alt="Home Logo" width={150} height={147} /></a> 
             </Link>
             <div className="nav-panel">
               <Link href='/trabajos'>

@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
     {isPlaying===false ? <button className='play' onClick={()=>setIsPlaying(true)} ><span>
-      <Image src={Play} alt="Press button to watch video reel"/>
+      <Image src={Play} alt="Press button to watch video reel" width={100} height={100}/>
       <p>{lang==="esp"? "VER REEL" : "WATCH REEL"}</p>
       </span></button>
     :<div className='player'>
